@@ -36,32 +36,32 @@ A class to contain a list of songs, with some convienance methods.
   ```
   - (void)sortSongsByTitle;
   ```
-    
-    * Should sort the songs array alphabetically ascending by title. If two songs have the same title, then they should be sorted alphabetically ascending by artist.
+  
+  * Should sort the songs array alphabetically ascending by title. If two songs have the same title, then they should be sorted alphabetically ascending by artist.
 
   ```
   - (void)sortSongsByArtist;
   ```
     
-    * Should sort the songs array alphabetically ascending by artist. If two songs have the same Artist, then they should be sorted alphabetically ascending by album.
+  * Should sort the songs array alphabetically ascending by artist. If two songs have the same Artist, then they should be sorted alphabetically ascending by album.
 
   ```
   - (void)sortSongsByAlbum;
   ```
     
-    * Should sort the songs array alphabetically ascending by Album. If two songs have the same album, then they should be sorted alphabetically ascending by title.
+  * Should sort the songs array alphabetically ascending by Album. If two songs have the same album, then they should be sorted alphabetically ascending by title.
 
   ```
   - (NSString *)description;
   ```
    
-    * An `NSString` representation of the playlist. Remember `\n` can be used for new line.
+  * An `NSString` representation of the playlist. Remember `\n` can be used for new line.
 
   ```
   - (FISSong *)songAtPosition:(NSNumber *)position;
   ```
     
-    * Returns the song at the position given. This should not start from 0, it should start at 1 because we are humans!
+  * Returns the song at the position given. This should not start from 0, it should start at 1 because we are humans!
 
 ## The View
 
