@@ -33,33 +33,33 @@ A class to contain a list of songs, with some convienance methods.
 
 #### Methods
 
-  ```
-  - (void)sortSongsByTitle;
-  ```
+```
+- (void)sortSongsByTitle;
+```
   
   * Should sort the songs array alphabetically ascending by title. If two songs have the same title, then they should be sorted alphabetically ascending by artist.
 
-  ```
-  - (void)sortSongsByArtist;
-  ```
+```
+- (void)sortSongsByArtist;
+```
     
   * Should sort the songs array alphabetically ascending by artist. If two songs have the same Artist, then they should be sorted alphabetically ascending by album.
 
-  ```
-  - (void)sortSongsByAlbum;
-  ```
+```
+- (void)sortSongsByAlbum;
+```
     
   * Should sort the songs array alphabetically ascending by Album. If two songs have the same album, then they should be sorted alphabetically ascending by title.
 
-  ```
-  - (NSString *)description;
-  ```
+```
+- (NSString *)description;
+```
    
   * An `NSString` representation of the playlist. Remember `\n` can be used for new line.
 
-  ```
-  - (FISSong *)songAtPosition:(NSNumber *)position;
-  ```
+```
+- (FISSong *)songAtPosition:(NSNumber *)position;
+```
     
   * Returns the song at the position given. This should not start from 0, it should start at 1 because we are humans!
 
