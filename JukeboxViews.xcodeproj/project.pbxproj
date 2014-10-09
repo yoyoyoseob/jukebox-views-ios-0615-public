@@ -27,6 +27,7 @@
 		72DD195A19A66AEE004F3C2F /* gangsta_bleeding_love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72DD195519A66AEE004F3C2F /* gangsta_bleeding_love.mp3 */; };
 		72DD195D19A66F3A004F3C2F /* bailando.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72DD195C19A66F3A004F3C2F /* bailando.mp3 */; };
 		72DD195F19AE35DE004F3C2F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD195E19AE35DE004F3C2F /* AVFoundation.framework */; };
+		836095CA0BA7143B33DEE520 /* libPods-JukeboxViewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D243E15CEC3F26D0618321C7 /* libPods-JukeboxViewsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55CEF501CDA5DA8D0F8938FA /* Pods-JukeboxViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		618C04B2151A5A26B1487B1B /* Pods-JukeboxViewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		72DD191019A66296004F3C2F /* JukeboxViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JukeboxViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72DD191319A66296004F3C2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		72DD191519A66296004F3C2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,6 +67,7 @@
 		72DD195519A66AEE004F3C2F /* gangsta_bleeding_love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gangsta_bleeding_love.mp3; sourceTree = "<group>"; };
 		72DD195C19A66F3A004F3C2F /* bailando.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bailando.mp3; sourceTree = "<group>"; };
 		72DD195E19AE35DE004F3C2F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D243E15CEC3F26D0618321C7 /* libPods-JukeboxViewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JukeboxViewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				72DD193319A66296004F3C2F /* XCTest.framework in Frameworks */,
 				72DD193519A66296004F3C2F /* UIKit.framework in Frameworks */,
 				72DD193419A66296004F3C2F /* Foundation.framework in Frameworks */,
+				836095CA0BA7143B33DEE520 /* libPods-JukeboxViewsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,7 @@
 				72DD193819A66296004F3C2F /* JukeboxViewsTests */,
 				72DD191219A66296004F3C2F /* Frameworks */,
 				72DD191119A66296004F3C2F /* Products */,
+				89BEC681C5A7B94675FA6A0B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +124,7 @@
 				72DD191519A66296004F3C2F /* CoreGraphics.framework */,
 				72DD191719A66296004F3C2F /* UIKit.framework */,
 				72DD193219A66296004F3C2F /* XCTest.framework */,
+				D243E15CEC3F26D0618321C7 /* libPods-JukeboxViewsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +184,15 @@
 			name = songs;
 			sourceTree = "<group>";
 		};
+		89BEC681C5A7B94675FA6A0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55CEF501CDA5DA8D0F8938FA /* Pods-JukeboxViewsTests.debug.xcconfig */,
+				618C04B2151A5A26B1487B1B /* Pods-JukeboxViewsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72DD194519A66296004F3C2F /* Build configuration list for PBXNativeTarget "JukeboxViewsTests" */;
 			buildPhases = (
+				B8CD8F192ACFBA908D6179C3 /* Check Pods Manifest.lock */,
 				72DD192D19A66296004F3C2F /* Sources */,
 				72DD192E19A66296004F3C2F /* Frameworks */,
 				72DD192F19A66296004F3C2F /* Resources */,
+				5EB406065D45DFAB98E04778 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +293,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EB406065D45DFAB98E04778 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8CD8F192ACFBA908D6179C3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72DD190C19A66296004F3C2F /* Sources */ = {
@@ -430,6 +481,7 @@
 		};
 		72DD194619A66296004F3C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CEF501CDA5DA8D0F8938FA /* Pods-JukeboxViewsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JukeboxViews.app/JukeboxViews";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -452,6 +504,7 @@
 		};
 		72DD194719A66296004F3C2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 618C04B2151A5A26B1487B1B /* Pods-JukeboxViewsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JukeboxViews.app/JukeboxViews";
 				FRAMEWORK_SEARCH_PATHS = (
